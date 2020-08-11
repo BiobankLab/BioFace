@@ -1,0 +1,687 @@
+[
+{
+    "id": 0,
+    "donorId": "0",
+    "relatedId": {
+        "parents": [
+            0
+        ],
+        "siblings": [
+            0
+        ],
+        "children": [
+            3
+        ],
+        "spouse": [
+            0
+        ]
+    },
+    "gender": "Male",
+    "birth_date": {
+        "date": "2019-02-01T12:24:33.925Z",
+        "dateCorrectess": "YYYY-MM-DD",
+        "data_availability": "yes"
+    },
+    "ethnic_group": {
+        "EG_name": "European origin",
+        "data_availability": "yes"
+    },
+    "skinTone": {
+        "data_availability": "yes",
+        "vonLuschan": 14,
+        "michalski": 10,
+        "CIELAB": {
+            "L": 2.0,
+            "a": 3.0,
+            "b": 4.0
+        },
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "hairColor": {
+        "data_availability": "yes",
+        "hcPalet": 10,
+        "Fisher-Saller": "A",
+        "CIELAB": {
+            "L": 1.0,
+            "a": 6.0,
+            "b": 3.0
+        },
+        "Descriptive": "Blond",
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "weight_declarative": {
+        "data_availability": "yes",
+        "weight": 78.8,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "weight_measured": {
+        "data_availability": "no",
+        "weight": 82.3,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "stature_declarative": {
+        "data_availability": "no",
+        "stature": 175.5,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "stature_measured": {
+        "data_availability": "yes",
+        "stature": 175.5,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "eyeColor": {
+        "data_availability": "yes",
+        "Martin-Schultz": 12,
+        "Michalski": 45,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "whr": {
+        "data_availability": "yes",
+        "WHR": 0.74,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "bmi": {
+        "data_availability": "yes",
+        "BMI": 26.8,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "blood_group": {
+        "data_availability": "yes",
+        "ABO": "A",
+        "Rh": "Rh+",
+        "Lewis": "Le(a-b-)",
+        "Kell": "K",
+        "Other": "string"
+    },
+    "ci": {
+        "data_availability": "yes",
+        "CI": 153.0,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "h_lenght": {
+        "data_availability": "yes",
+        "h_len": 190.0,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "h_breadth": {
+        "data_availability": "yes",
+        "h_bre": 26.7,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.925Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "f_length": {
+        "data_availability": "yes",
+        "f_len": 32.5,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.926Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "f_breadth": {
+        "data_availability": "yes",
+        "f_bre": 21.9,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.926Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "h_circ": {
+        "data_availability": "yes",
+        "h_circ": 67.9,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.926Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "n_circ": {
+        "data_availability": "yes",
+        "n_circ": 45.76,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.926Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "dactylion_height": {
+        "data_availability": "yes",
+        "da_height": 42.89,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.926Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "shoulder_height": {
+        "data_availability": "yes",
+        "e_height": 38.39,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "lower_limb_len_1": {
+        "data_availability": "yes",
+        "lll1": 39.02,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "ower_limb_len_2": {
+        "data_availability": "yes",
+        "lll2": 18.29,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "tibial_height": {
+        "data_availability": "yes",
+        "t_height": 10.93,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "chest_circ": {
+        "data_availability": "yes",
+        "c_circ": 23.76,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "waist_circ": {
+        "data_availability": "yes",
+        "w_circ": 78.49,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "hand_length": {
+        "data_availability": "yes",
+        "h_len": 44.2,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "hand_breadth": {
+        "data_availability": "yes",
+        "h_bre": 10.2,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "foot_length": {
+        "data_availability": "yes",
+        "f_len": 43.0,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "foot_breadth": {
+        "data_availability": "yes",
+        "f_bre": 14.5,
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        }
+    },
+    "birth_place": {
+        "BP": "Białystok",
+        "data_availability": "yes"
+    },
+    "residence_place": {
+        "RP": "Białystok",
+        "timestamp": {
+            "date": "2019-02-01T12:24:33.927Z",
+            "dateCorrectess": "YYYY-MM-DD"
+        },
+        "data_availability": "yes"
+    },
+    "questionnaire": "yes",
+    "diseases": [
+        {
+            "data_availability": "yes",
+            "icd-10": "G62.1",
+            "noCode": "Polyneuropathies and other disorders of the peripheral nervous system",
+            "snomed": 7916009,
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        },
+        {
+            "data_availability": "yes",
+            "icd-10": "I86.4",
+            "noCode": "Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified",
+            "snomed": 91109007,
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        },
+        {
+            "data_availability": "yes",
+            "icd-10": "S86.0",
+            "noCode": "Injuries to the knee and lower leg",
+            "snomed": 110030002,
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        }
+    ],
+    "medicalProcedures": [
+        {
+            "data_availability": "yes",
+            "snomed": 310336002,
+            "icd-9": "011.3",
+            "noCode": "Tuberculosis of bronchus",
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        },
+        {
+            "data_availability": "yes",
+            "snomed": 845126092,
+            "icd-9": "115.01",
+            "noCode": "Infection by Histoplasma capsulatum, meningitis",
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        },
+        {
+            "data_availability": "yes",
+            "snomed": 510586719,
+            "icd-9": "132.3",
+            "noCode": "Mixed pediculosis infestation",
+            "timestamp": {
+                "date": "2019-02-01T12:24:33.927Z",
+                "dateCorrectess": "YYYY-MM-DD"
+            }
+        }
+    ],
+    "sample": [
+        {
+            "materialType": "Nucleic Acids",
+            "storageTemperature": "+2 to +10",
+            "SampleMaterial": {
+                "tissue": {
+                    "source": "liver",
+                    "kind": "healthy",
+                    "method": "biopsy"
+                },
+                "whole_blood": {
+                    "method": "EDTA"
+                },
+                "serum": {
+                    "info": "hemolitic"
+                },
+                "plasma": {
+                    "info": "too much proteins"
+                },
+                "buffy_coat": {
+                    "info": "white blood cells and platelets"
+                },
+                "FFPE": {
+                    "method": "sample preparation",
+                    "kind": "healthy",
+                    "source": "brain"
+                },
+                "Urine": {
+                    "info": "pH"
+                },
+                "Saliva": {
+                    "info": "consistency",
+                    "methods": "saliva collection"
+                },
+                "Stool": {
+                    "info": "bulky"
+                },
+                "Nucleic_acid": {
+                    "kind": "DNA",
+                    "source": "isolated from blood",
+                    "method": "Breaking the cell membranes"
+                },
+                "Other": "other"
+            },
+            "SampleInfo": {
+                "id": 1,
+                "sampleId": "11",
+                "parentSampleId": "111",
+                "accesion": "accessible",
+                "timestamp": {
+                    "date": "2019-02-01T12:24:33.927Z",
+                    "dateCorrectess": "YYYY-MM-DD"
+                },
+                "collection": "collection1",
+                "biobank": "biobank1",
+                "owner": "Prof. Agnes",
+                "comments": "warning"
+            },
+            "SampleQMS": {
+                "preCT": "none",
+                "postCT": "none",
+                "primarycontainer": "list of the most common primary tubes",
+                "storagetemp": "long storage temperature",
+                "lid": "lid tightness control",
+                "markers": "potassium",
+                "fasting": "fasting",
+                "documentation": "none"
+            }
+        },
+        {
+            "materialType": "Buffy coat",
+            "storageTemperature": "-150 to -196",
+            "SampleMaterial": {
+                "tissue": {
+                    "source": "liver",
+                    "kind": "pathologic",
+                    "method": "biopsy"
+                },
+                "whole_blood": {
+                    "method": "heparin"
+                },
+                "serum": {
+                    "info": "lipidic"
+                },
+                "plasma": {
+                    "info": "hemolitic"
+                },
+                "buffy_coat": {
+                    "info": "white blood cells and platelets"
+                },
+                "FFPE": {
+                    "method": "staining",
+                    "kind": "pathologic",
+                    "source": "embrio"
+                },
+                "Urine": {
+                    "info": "protein content"
+                },
+                "Saliva": {
+                    "info": "consistency",
+                    "methods": "saliva collection"
+                },
+                "Stool": {
+                    "info": "bulky"
+                },
+                "Nucleic_acid": {
+                    "kind": "DNA",
+                    "source": "string",
+                    "method": "Breaking the cell membranes"
+                },
+                "Other": "other"
+            },
+            "SampleInfo": {
+                "id": 2,
+                "sampleId": "22",
+                "parentSampleId": "222",
+                "accesion": "limited access",
+                "timestamp": {
+                    "date": "2019-02-01T12:24:33.927Z",
+                    "dateCorrectess": "YYYY-MM-DD"
+                },
+                "collection": "collection1",
+                "biobank": "biobank2",
+                "owner": "Prof. Uban",
+                "comments": "warning"
+            },
+            "SampleQMS": {
+                "preCT": "pre centrifugation",
+                "postCT": "post centrifugation",
+                "primarycontainer": "list of the most common primary tubes",
+                "storagetemp": "long storage temperature",
+                "lid": "lid tightness control",
+                "markers": "sodium",
+                "fasting": "fasting",
+                "documentation": "full"
+            }
+        },
+        {
+            "materialType": "Buffy coat",
+            "storageTemperature": "Room temperature",
+            "SampleMaterial": {
+                "tissue": {
+                    "source": "brain",
+                    "kind": "pathologic",
+                    "method": "biopsy"
+                },
+                "whole_blood": {
+                    "method": "EDTA"
+                },
+                "serum": {
+                    "info": "hemolitic"
+                },
+                "plasma": {
+                    "info": "lipidic"
+                },
+                "buffy_coat": {
+                    "info": "white blood cells and platelets"
+                },
+                "FFPE": {
+                    "method": "embedding",
+                    "kind": "healthy",
+                    "source": "embrio"
+                },
+                "Urine": {
+                    "info": "protein content"
+                },
+                "Saliva": {
+                    "info": "colour",
+                    "methods": "saliva collection"
+                },
+                "Stool": {
+                    "info": "bulky"
+                },
+                "Nucleic_acid": {
+                    "kind": "DNA",
+                    "source": "isolated from blood",
+                    "method": "Breaking the cell membranes"
+                },
+                "Other": "other"
+            },
+            "SampleInfo": {
+                "id": 3,
+                "sampleId": "33",
+                "parentSampleId": "333",
+                "accesion": "accessible",
+                "timestamp": {
+                    "date": "2019-02-01T12:24:33.927Z",
+                    "dateCorrectess": "YYYY-MM-DD"
+                },
+                "collection": "collection2",
+                "biobank": "biobank1",
+                "owner": "Prof. Agnes",
+                "comments": "warning"
+            },
+            "SampleQMS": {
+                "preCT": "pre centrifugation",
+                "postCT": "post centrifugation",
+                "primarycontainer": "list of the most common primary tubes",
+                "storagetemp": "long storage temperature",
+                "lid": "lid tightness control",
+                "markers": "sodium",
+                "fasting": "fasting",
+                "documentation": "none"
+            }
+        },
+        {
+            "materialType": "Urine",
+            "storageTemperature": "+2 to +10",
+            "SampleMaterial": {
+                "tissue": {
+                    "source": "cells",
+                    "kind": "healthy",
+                    "method": "other"
+                },
+                "whole_blood": {
+                    "method": "CPDA"
+                },
+                "serum": {
+                    "info": "hemolitic"
+                },
+                "plasma": {
+                    "info": "lipidic"
+                },
+                "buffy_coat": {
+                    "info": "white blood cells and platelets"
+                },
+                "FFPE": {
+                    "method": "fixation",
+                    "kind": "pathologic",
+                    "source": "embrio"
+                },
+                "Urine": {
+                    "info": "colour"
+                },
+                "Saliva": {
+                    "info": "colour",
+                    "methods": "saliva collection"
+                },
+                "Stool": {
+                    "info": "bulky"
+                },
+                "Nucleic_acid": {
+                    "kind": "DNA",
+                    "source": "FFPE",
+                    "method": "Breaking the cell membranes"
+                },
+                "Other": "other"
+            },
+            "SampleInfo": {
+                "id": 4,
+                "sampleId": "44",
+                "parentSampleId": "444",
+                "accesion": "inaccessible",
+                "timestamp": {
+                    "date": "2019-02-01T12:24:33.927Z",
+                    "dateCorrectess": "YYYY-MM-DD"
+                },
+                "collection": "collection2",
+                "biobank": "biobank1",
+                "owner": "Prof. Uban",
+                "comments": "QM"
+            },
+            "SampleQMS": {
+                "preCT": "none",
+                "postCT": "post centrifugation",
+                "primarycontainer": "list of the most common primary tubes",
+                "storagetemp": "long storage temperature",
+                "lid": "lid tightness control",
+                "markers": "potassium",
+                "fasting": "fasting",
+                "documentation": "none"
+            }
+        },
+        {
+            "materialType": "Saliva",
+            "storageTemperature": "Room temperature",
+            "SampleMaterial": {
+                "tissue": {
+                    "source": "cells",
+                    "kind": "pathologic",
+                    "method": "citrate"
+                },
+                "whole_blood": {
+                    "method": "EDTA"
+                },
+                "serum": {
+                    "info": "lipidic"
+                },
+                "plasma": {
+                    "info": "too much proteins"
+                },
+                "buffy_coat": {
+                    "info": "white blood cells and platelets"
+                },
+                "FFPE": {
+                    "method": "sample preparation",
+                    "kind": "healthy",
+                    "source": "brain"
+                },
+                "Urine": {
+                    "info": "colour"
+                },
+                "Saliva": {
+                    "info": "consistency",
+                    "methods": "saliva collection"
+                },
+                "Stool": {
+                    "info": "bulky"
+                },
+                "Nucleic_acid": {
+                    "kind": "RNA",
+                    "source": "tissue",
+                    "method": "Breaking the cell membranes"
+                },
+                "Other": "other"
+            },
+            "SampleInfo": {
+                "id": 5,
+                "sampleId": "55",
+                "parentSampleId": "555",
+                "accesion": "inaccessible",
+                "timestamp": {
+                    "date": "2019-02-01T12:24:33.927Z",
+                    "dateCorrectess": "YYYY-MM-DD"
+                },
+                "collection": "collection3",
+                "biobank": "biobank1",
+                "owner": "Prof. Agnes",
+                "comments": "warning"
+            },
+            "SampleQMS": {
+                "preCT": "pre centrifugation",
+                "postCT": "post centrifugation",
+                "primarycontainer": "list of the most common primary tubes",
+                "storagetemp": "long storage temperature",
+                "lid": "lid tightness control",
+                "markers": "potassium",
+                "fasting": "fasting",
+                "documentation": "none"
+            }
+        }
+    ]
+}
+]

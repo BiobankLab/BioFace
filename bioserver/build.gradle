@@ -1,0 +1,16 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+    version = '1.0'
+    sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+	tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+    repositories {
+        mavenCentral()
+    }
+
+}

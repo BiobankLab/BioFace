@@ -1,0 +1,69 @@
+{
+  "app": {
+    "header": "Dispersion module"
+  },
+  "nav": {
+    "BiobanksPermissions": "Biobanks Permissions",
+    "login": "Login",
+    "logout": "Logout",
+    "token": "Token",
+    "uploadSamples": "Upload Samples"
+  },
+  "biobanks": {
+    "addBiobank": "Add Biobank",
+    "biobank": "Biobank",
+    "biobankName": "Biobank Name",
+    "publicKey": "Public Key",
+    "menageBiobanksPermissions": "Menage Biobanks Permissions",
+    "permissionsToAdd": "Permissions To Add",
+    "biobankPermissions": "Biobank Permissions",
+    "biobankPlaceholder": "Select Biobank"
+  },
+  "buttons": {
+    "reset": "Reset",
+    "submit": "Submit",
+    "generate": "Generate",
+    "upload": "Upload",
+    "close": "Close"
+  },
+  "permissionsNotifications": {
+    "successPermissionAdd": "Permission added successfully",
+    "successPermissionRemove": "Permission removed successfully",
+    "successBiobankAdd": "Biobank added successfully",
+    "successBiobankDelete": "Biobank deleted successfully",
+    "errorPermissionAdd": "Error wile adding permission",
+    "errorPermissionRemove": "Error wile removing permission",
+    "errorBiobankAdd": "Error while adding biobank",
+    "errorBiobankDelete": "Error while deleting biobank",
+    "errorGettingBiobanks": "Error while getting biobanks",
+    "errorGettingPermisions": "Error while getting biobank permissions",
+    "successBiobankUpdate": "Biobank accession updated successfully",
+    "errorUpdateBiobank": "Error while updating biobank accession"
+  },
+  "tokenGenerator": {
+    "generateToken": "Generate Token",
+    "generatedToken": "Generated Token"
+  },
+  "samples": {
+    "upload": "Select json file with samples",
+    "uploadHeader": "Upload Samples",
+    "successUpload": "Samples uploaded successfully",
+    "errorUpload": "Error while uploading samples"
+  },
+  "loginPage": {
+    "login": "Login",
+    "logout": "Logout",
+    "username": "username",
+    "password": "password",
+    "empytUsernameOrPassword": "Empty username or password",
+    "wrongUsernameOrPassword": "Wrong username or password"
+  },
+  "jobsTable": {
+    "originalFileName": "Filename",
+    "addTime": "Add time",
+    "status": "Status",
+    "indexerStartTime": "Process start time",
+    "indexerFinishTime": "Process finish time",
+    "error": "Error"
+  }
+}

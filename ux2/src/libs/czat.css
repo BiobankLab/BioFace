@@ -1,0 +1,225 @@
+template {
+  display: block;
+}
+
+.contentmain.modal {
+  border-radius: 10px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: scroll;
+  outline: 0;
+  padding-right: 0px !important;
+}
+
+.contentmain .modal .modal-dialog {
+  max-width: 650px;
+  min-height: 450px;
+}
+
+.contentmain.modal .modal-content {
+  min-height: 450px;
+  border: 0;
+}
+
+.contentmain.modal .modal-body {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0;
+}
+
+.contenttop {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  flex: 0.2;
+}
+
+.contentchat {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 6;
+  padding: 10px;
+  width: 100%;
+  max-height: 400px;
+  background: #fafafa;
+  margin-top: 10px;
+}
+
+.contentbottom {
+  display: flex;
+  width: 100%;
+  flex: 0.8;
+  margin-top: 50px;
+}
+
+.contentbottom textarea {
+  margin-bottom: 6px
+}
+
+.headerdivcell {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.headertext {
+  margin: 0 auto;
+  color: #444;
+  font-size: 18px;
+}
+
+.contentLeft {
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow-y: auto;
+  background: #fff;
+  text-align: center !important;
+}
+
+.channelListElement {
+  display: inline-block;
+  padding: 5px 5px;
+  min-width: 75px;
+  margin-bottom: 10px;
+}
+
+.channelListElement:hover, .channelListElement:focus {
+  background-color: #113be0;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0);
+  color: #fff
+}
+
+.active-czat {
+  background-color: #113be0 !important;
+  color: #fff
+}
+
+.data {
+  text-align: center;
+  color: #444;
+  font-size: small;
+}
+
+.data p {
+  font-weight: bold
+}
+
+.btn-mini-czat {
+  margin-bottom: 6px;
+  min-width: 80px;
+  font-size: 10px;
+  Padding: 10px 5px;
+  border-radius: 4px
+}
+
+.btn-czat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 26px 25px 26px 25px;
+  font-size: 21px;
+  z-index: 99
+}
+
+.speech-bubble-left {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: #24d5d8;
+  border-radius: .4em;
+  margin-bottom: 20px;
+  min-width: 150px;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+  -moz-box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+  box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+}
+
+.speech-bubble-left:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-top-color: #24d5d8;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -8px;
+  margin-bottom: -16px;
+}
+
+.speech-bubble-right {
+  position: relative;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+  background: #6BAED6;
+  border-radius: .4em;
+  margin-bottom: 20px;
+  text-align: left;
+  min-width: 150px;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+  -moz-box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+  box-shadow: 0px 7px 20px 2px rgba(9, 4, 25, 0.1);
+}
+
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-top-color: #6BAED6;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -8px;
+  margin-bottom: -16px;
+}
+
+.chattext {
+  margin: 0;
+  font-size: 16px
+}
+
+.czat-text-wrap {
+  margin-bottom: 50px;
+}
+
+.speech-text-area {
+  background: #fafafa;
+  padding: 16px 10px;
+  font-size: 16px;
+  clear: both;
+}
+
+@media (min-width:768px) {
+
+  /*
+.contentmain {
+max-width: 500px;
+}*/
+  .contentmain.modal-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .channelListElement {
+    min-width: 110px;
+    padding: 10px 25px;
+  }
+}

@@ -1,0 +1,99 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.bioface'
+version = '0.0.1-SNAPSHOT'
+
+description = """rest-api-bioface"""
+
+buildscript {
+	ext {
+		springBootVersion = '2.0.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+	
+}
+
+sourceSets {
+    integrationTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/test-integration/java')
+        }
+        resources.srcDir file('src/test-integration/resources')
+    }   
+}
+
+configurations {
+	all {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+	}
+	compile.exclude(group: 'ch.qos.logback')
+    integrationTestCompile.extendsFrom testCompile
+    integrationTestRuntime.extendsFrom testRuntime
+}
+
+task integrationTest(type: Test, dependsOn: testClasses) {
+	include '**/*IntegrationTestSuite*'
+    testClassesDir = sourceSets.integrationTest.output.classesDir
+    classpath = sourceSets.integrationTest.runtimeClasspath
+    outputs.upToDateWhen { false }
+}
+
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'java'
+
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
+
+repositories {
+     mavenCentral()
+}
+dependencies {
+	compile(project(':bioimporter')) {
+		exclude group: 'org.slf4j'
+		exclude group: 'org.mongodb.morphia'
+	}
+   	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:"${springBootVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version:"${springBootVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version:"${springBootVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version:"${springBootVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version:"${springBootVersion}"
+  	compile group: 'io.springfox', name: 'springfox-swagger2', version:'2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version:'2.7.0'
+    compile group: 'com.github.joschi.jackson', name: 'jackson-datatype-threetenbp', version:'2.6.4'
+    compile group: 'javax.validation', name: 'validation-api', version:'1.1.0.Final'
+    compile group: 'org.apache.solr', name: 'solr-solrj', version:'7.3.1'
+    compile group: 'org.json', name: 'json', version:'20160810'
+   	compile group: 'com.auth0', name: 'java-jwt', version: '3.3.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: "${springBootVersion}"
+    compile group: 'org.keycloak', name: 'keycloak-spring-boot-2-starter', version: '4.0.0.Final'
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.0.3.RELEASE'
+    compile group: 'org.keycloak', name: 'keycloak-test-helper', version: '4.0.0.Final'
+    compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.4'
+	compile group: 'org.apache.shiro', name: 'shiro-spring-boot-starter', version: '1.4.0'
+	compile group: 'org.liquibase', name: 'liquibase-core', version: '3.6.2'	
+	compile group: 'com.h2database', name: 'h2', version: '1.3.148'
+	compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
+	compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.0'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version:"${springBootVersion}"
+	compile group: 'org.keycloak', name: 'keycloak-admin-client', version: '4.0.0.Final'
+	compile fileTree(dir: 'libs', include: '*.jar')
+    
+    //PL: check
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.6'
+    
+    
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}") {
+		exclude(module: 'commons-logging')
+    }
+    integrationTestCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}")
+}
+

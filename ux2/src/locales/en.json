@@ -1,0 +1,864 @@
+{
+  "table": {
+    "emtpy": "There is no content to show"
+  },
+  "none": "None",
+  "project": "Project",
+  "messageChannel": "Channel",
+  "ok": "Success",
+  "error": "Error",
+  "warning": "Warning",
+  "info": "Info",
+  "upload": "Upload",
+  "reset": "Reset",
+  "chat": {
+    "send": "Send",
+    "close": "Close",
+    "enterMessage": "Enter message",
+    "init": {
+      "error": "Error while initializing chat"
+    }
+  },
+  "nav": {
+    "Bioface": "Bioface",
+    "Biobank": "Biobank",
+    "Collections": "Collections",
+    "Samples": "Samples",
+    "Profile": "Profile",
+    "SearchButton": "Search",
+    "SearchPlaceholder": "Search...",
+    "signout": "Sign out",
+    "Projects": "Projects",
+    "singIn": "Sign In",
+    "adminPanel": "Admin panel",
+    "user": {
+      "unlogged": "Guest"
+    }
+  },
+  "dashboard": {
+    "getData": {
+      "error": "Error while getting statistics data"
+    },
+    "samplesInfo": {
+      "main1": "Over",
+      "main2": "samples",
+      "second": "placed in the system",
+      "secondDisp": "from shared systems",
+      "third": "ADD OTHER INFO"
+    },
+    "biobanksInfo": {
+      "main": "Number of biobanks",
+      "second": "registered in application",
+      "third": "ADD OTHER INFO"
+    },
+    "dispersionInfo": {
+      "main": "Number of shared systems",
+      "second": "registered in application",
+      "third": "ADD OTHER INFO"
+    },
+    "appInfo": {
+      "main": "Bioface",
+      "second": "Biobank application",
+      "third": "ADD OTHER INFO"
+    },
+    "mainInfo": {
+      "header": "One application",
+      "additionalInfo": "for all Biobanks human samples",
+      "description": "Samples and data accessibility in research biobanks.",
+      "button": {
+        "explore": "explore"
+      }
+    },
+    "buttons": {
+      "resetFilter": "Reset chart"
+    },
+    "chartByDate": {
+      "xAxis": "Time",
+      "yAxis": "Quantity"
+    },
+    "samplesSelectedInfo": {
+      "part1": "selected out of",
+      "part2": "samples"
+    },
+    "chart": {
+      "header": {
+        "main": "Pie charts with data",
+        "second": "Check out what data the Bioface application can provide"
+      },
+      "dispersionHeader": {
+        "main": "Pie charts with data from shared systems",
+        "second": "Check out what data from shared systems applications can provide"
+      },
+      "title": {
+        "disease": "Disease",
+        "diseaseDetails": "Disease details",
+        "sampleType": "Samples type",
+        "sampleDetails": "Samples details",
+        "filtering": "Filtering"
+      }
+    }
+  },
+  "biobanks": {
+    "header": "Biobank",
+    "placeholders": {
+      "choose": "Choose biobank"
+    },
+    "cards": {
+      "header": {
+        "biobanks": "List of biobanks",
+        "samples": "Biobank samples"
+      }
+    },
+    "jobs": {
+      "dialog": {
+        "error": {
+          "title": "Error details",
+          "dispersionHeader": "Upload to dispersion?",
+          "uploadToDispersion": "Do you want to upload samples to dispersion module?"
+        }
+      },
+      "table": {
+        "labels": {
+          "id": "Id",
+          "status": "Status",
+          "originalFileName": "Filename",
+          "addTime": "Add time",
+          "indexerStartTime": "Process start time",
+          "indexerFinishTime": "Process finish time"
+        }
+      }
+    },
+    "table": {
+      "labels": {
+        "dbId": "Database id",
+        "id": "Biobank id",
+        "acronym": "Acronym",
+        "name": "Name",
+        "url": "Url",
+        "juristicPerson": "Juristic person",
+        "country": "Country",
+        "actions": "Actions"
+      }
+    },
+    "buttons": {
+      "create": "Create Biobank"
+    },
+    "dialog": {
+      "labels": {
+        "id": "Biobank id:",
+        "name": "Name:",
+        "acronym": "Acronym:",
+        "url": "Url:",
+        "juristicPerson": "Juristic person:",
+        "country": "Country:"
+      },
+      "placeholders": {
+        "id": "Enter Biobank id",
+        "name": "Enter Biobank name",
+        "acronym": "Enter Biobank acronym",
+        "url": "Enter Biobank url",
+        "juristicPerson": "Enter Biobank juristic person",
+        "country": "Enter Biobank country"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit"
+      },
+      "headers": {
+        "create": "Create Biobank",
+        "edit": "Edit Biobank"
+      },
+      "messages": {
+        "create": {
+          "validation":"Biobank should have 3-70 signs and doesn't contain spaces or underscores",
+          "success": "Successfully created biobank",
+          "error": "Error while creating biobank.",
+          "idExists": "Given biobank id already exists"
+        },
+        "edit": {
+          "success": "Successfully modified biobank",
+          "error": "Error while modifying biobank"
+        }
+      }
+    }
+  },
+
+  "samples": {
+    "dispersion": {
+      "get": {
+        "error": "While getting dispersion data error occured.",
+        "messageError": "Error while getting data from this instance."
+      }
+    },
+    "fieldslist": {
+      "error": "Error while getting fields list"
+    },
+    "header": "Samples",
+    "additionalInfo": "Filtering samples",
+    "get": {
+      "message": {
+        "error": "Error while getting samples"
+      },
+      "parse": {
+        "error": "Error while parsing query"
+      }
+    },
+    "table": {
+      "labels": {
+        "id": "Id",
+        "sampleId": "Sample id",
+        "parentSampleId": "Parent sample id",
+        "accession": "Accession",
+        "collection": "Collection",
+        "biobank": "Biobank",
+        "owner": "Owner",
+        "comments": "Comments",
+        "timestamp": "Timestamp",
+        "relatedIdParents": "Related parents ids",
+        "relatedIdSiblings": "Related siblings ids",
+        "relatedIdChildren": "Related children ids",
+        "relatedIdSpouse": "Related spouse ids",
+        "donorId": "Donor id",
+        "gender": "Gender",
+        "age": "Age",
+        "ethnic_group": "Ethnic group",
+        "skinToneVonLuschan": "Skin tone (Von Luschan)",
+        "skinToneMichalski": "Skin tone (Michalski)",
+        "skinToneTimestamp": "Skin tone timestamp",
+        "skinToneTimestampCorrectess": "Skin tone timestamp correctess",
+        "hairColorHcPalet": "Hair color (hc palet)",
+        "hairColorTextDescription": "Hair color (text description)",
+        "hairColorTimestamp": "Hair color timestamp",
+        "hairColorTimestampCorrectess": "Hair color timestamp correctess",
+        "weight": "Weight",
+        "weightTimestamp": "Weight timestamp",
+        "weightTimestampCorrectess": "Weight timestamp correctess",
+        "height": "Height",
+        "heightTimestamp": "Height timestamp",
+        "heightTimestampCorrectess": "Height timestamp correctess",
+        "eyeColorIrisPlex": "Eye color (Iris plex)",
+        "eyeColorTextDescription": "Eye color (text description)",
+        "whrValue": "Whr value",
+        "whrTimestamp": "Whr timestamp",
+        "whrTimestampCorrectess": "Whr timestamp correctess",
+        "bmiValue": "Bmi value",
+        "bmiTimestamp": "Bmi timestamp",
+        "bmiTimestampCorrectess": "Bmi timestamp correctess",
+        "bloodGroupAB0": "Blood group (AB0)",
+        "bloodGroupRh": "Blood group (RH)",
+        "bloodGroupLewis": "Blood group (Lewis)",
+        "bloodGroupKell": "Blood group (Kell)",
+        "bloodGroupOther": "Blood group (Other)",
+        "diseasesIcd10": "Diseases (ICD10)",
+        "diseasesNoCode": "Diseases (no code)",
+        "diseasesTimestamp": "Diseases timestamps",
+        "diseasesSnomed": "Diseases (snomed)",
+        "medicalProceduresIcd9": "Medical procedures (ICD9)",
+        "medicalProceduresNoCode": "Medical procedures (No code)",
+        "medicalProceduresTimestamp": "Medical procedures timestamp",
+        "medicalProceduresSnomed": "Medical procedures (snomed)",
+        "sampleMaterialType": "Material type",
+        "sampleStorageTemperature": "Sample storage temperature",
+        "sampleMaterialTissueSource": "Material tissue source",
+        "sampleMaterialTissueKind": "Material tissue kind",
+        "sampleMaterialTissueMethod": "Material tissue method",
+        "sampleMaterialWholeBloodMethod": "Material whole blood method",
+        "sampleMaterialSerumInfo": "Material serum info",
+        "sampleMaterialPlasmaInfo": "Material plasma info",
+        "sampleMaterialBuffyCoatInfo": "Material buffy coat info",
+        "sampleMaterialFfpeMethod": "Material FFPE method",
+        "sampleMaterialFfpeKind": "Material FFPE kind",
+        "sampleMaterialFfpeSource": "Material FFPE source",
+        "sampleMaterialUrineInfo": "Material urine info",
+        "sampleMaterialSalivaInfo": "Material salvia info",
+        "sampleMaterialSalivaMethod": "Material salvia method",
+        "sampleMaterialStoolInfo": "Material stool info",
+        "sampleMaterialNucleidAcidKind": "Material nucleid acid kind",
+        "sampleMaterialNucleidAcidSource": "Material nucleid acid source",
+        "sampleMaterialNucleidAcidMethod": "Material nucleid acid method",
+        "sampleMaterialOther": "Material other",
+        "sampleQmsPreCt": "QMS PreCt",
+        "sampleQmsPostCt": "QMS PostCt",
+        "sampleQmsPrimaryContainer": "QMS primary container",
+        "sampleQmsStorageTemperature": "QMS storage temperature",
+        "sampleQmsLid": "QMS lid",
+        "sampleQmsMarkers": "QMS markers",
+        "sampleQmsFasting": "QMS fasting",
+        "sampleQmsDocumentation": "QMS documentation",
+        "faceBreadthTimestamp":"Face breadth timestamp",
+        "footLengthTimestamp":"Foot length timestamp",
+        "statureMeasuredDataAvailability":"Stature measured data availability",
+        "chestCircumferenceTimestamp":"Check circumference timestamp",
+        "chestCircumferenceTimestampCorrectess":"Check circumference timestamp correctess",
+        "ciTimestampCorrectess":"CI timestamp correctess",
+        "footLengthTimestampCorrectess":"Foot length timestamp correctess",
+        "neckCircumferenceTimestamp":"Neck circumference timestamp",
+        "dactylionHeight":"Dactylion height",
+        "waistCircumferenceDataAvailability":"Waist circumference data availability",
+        "faceLengthTimestampCorrectess":"Face length timestamp correctess",
+        "ciTimestamp":"CI timestamp",
+        "faceBreadthTimestampCorrectess":"Face breadth timestamp",
+        "hairColorDataAvailability":"Hair color data availability",
+        "birthDateCorrectess":"Birth date correctess",
+        "statureDeclarativeTimestampCorrectess":"Stature declarative timestamp correctess",
+        "statureMeasuredTimestamp":"Stature measured timestamp",
+        "tibialHeight":"Tibial height",
+        "bmiDataAvailability":"BMI data availability",
+        "handLengthTimestampCorrectess":"Hand length timestamp correctess",
+        "faceLength":"Face length",
+        "shoulderHeightTimestampCorrectess":"Shoulder height timestamp correctess",
+        "waistCircumferenceTimestamp":"Waist circumference timestamp",
+        "ethnicGroupDataAvailability":"Ethnic group data availability",
+        "footBreadthTimestamp":"Foot breadth timestamp",
+        "eyeColorMichalski":"Eye color Michalski",
+        "lowerLimbLength2DataAvailability":"Lower limb length (2) data availability",
+        "lowerLimbLength2TimestampCorrectess":"Lower limb length (2) timestamp correctess",
+        "weightDeclarativeDataAvailability":"Weight declarative data availability",
+        "weightMeasuredTimestampCorrectess":"Weight measured timestamp correctess",
+        "neckCircumferenceDataAvailability":"Neck circumference data availability",
+        "skinToneDataAvailability":"Skin tone data availability",
+        "waistCircumference":"Waist circumference",
+        "diseasesDataAvailability":"Diseases data availability",
+        "handBreadth":"Hand breadth",
+        "weightDeclarative":"Weight declarative",
+        "eyeColorTimestampCorrectess":"Eye color timestamp correctess",
+        "waistCircumferenceTimestampCorrectess":"Waist circumference timestamp correctess",
+        "weightMeasuredTimestamp":"Weight measured timestamp",
+        "birthPlace":"Birth place",
+        "footBreadth":"Foot breadth",
+        "ciDataAvailability":"CI data availability",
+        "footBreadthTimestampCorrectess":"Foot bready timestamp correctess",
+        "eyeColorDataAvailability":"Eye color data availability",
+        "diseasesTimestampCorrectess":"Diseases timestamp correctess",
+        "statureDeclarativeDataAvailability":"Stature declarative data availability",
+        "hairColorDescriptive":"Hair color descriptive",
+        "headCircumference":"Head circumference",
+        "ci":"CI",
+        "headCircumferenceTimestamp":"Head circumference timestamp",
+        "statureDeclarative":"Stature declarative",
+        "eyeColorTimestamp":"Eye color timestamp",
+        "weightDeclarativeTimestampCorrectess":"Weight declarative timestamp correctess",
+        "eyeColorMartinSchultz":"Eye color Martin Schultz",
+        "handBreadthDataAvailability":"Hand breadth data availability",
+        "handLengthTimestamp":"Hand length timestamp",
+        "weightDeclarativeTimestamp":"Weight declarative timestamp",
+        "statureMeasured":"Stature measured",
+        "weightMeasured":"Weight measured",
+        "residencePlaceTimestamp":"Residence place timestamp",
+        "bmi":"BMI",
+        "chestCircumferenceDataAvailability":"Check circumference data availability",
+        "headCircumferenceTimestampCorrectess":"Head circumference timestamp correctess",
+        "headLengthDataAvailability": "Head length data availability",
+        "headLengthTimestamp": "Head length timestamp",
+        "headLength": "Head length",
+        "headLengthTimestampCorrectess": "Head length timestamp correctess",
+        "handBreadthTimestampCorrectess":"Hand breadth timestamp correctess",
+        "headCircumferenceDataAvailability":"Head circumference data availability",
+        "tibialHeightTimestampCorrectess":"Tibial height timestamp correctess",
+        "tibialHeightDataAvailability":"Tibial height data availability",
+        "medicalProceduresTimestampCorrectess":"Medical procedures timestamp correctess",
+        "headBreadthDataAvailability":"Head breadth data availability",
+        "lowerLimbLength2Timestamp":"Lower limb length (2) timestamp",
+        "ethnicGroupEgName":"Ethnic group name",
+        "footLength":"Foot length",
+        "skinToneCielabL":"Skin tone CIELAB (L)",
+        "neckCircumferenceTimestampCorrectess":"Neck circumference timestamp correctess",
+        "skinToneCielabA":"Skin tone CIELAB (A)",
+        "headBreadthTimestamp":"Head breadth timestamp",
+        "skinToneCielabB":"Skin tone CIELAB (B)",
+        "faceBreadth":"Face breadth",
+        "chestCircumference":"Chest circumference",
+        "faceLengthTimestamp":"Face length timestamp",
+        "dactylionHeightDataAvailability":"Dactylion height data availability",
+        "lowerLimbLength1TimestampCorrectess":"Lower limb length (1) timestamp correctess",
+        "handLengthDataAvailability":"Hand length data availability",
+        "birthPlaceDataAvailability":"Birth place data availability",
+        "statureDeclarativeTimestamp":"Stature declarative timestamp",
+        "whr":"WHR",
+        "questionnaire":"Questionnaire",
+        "hairColorCielabL":"Hair color CIELAB (L)",
+        "lowerLimbLength2":"Lower limb length (2)",
+        "dactylionHeightTimestamp":"Dactylion height timestamp",
+        "lowerLimbLength1":"Lower limb length (1)",
+        "hairColorCielabB":"Hair color CIELAB (B)",
+        "hairColorCielabA":"Hair color CIELAB (A)",
+        "bloodGroupDataAvailability":"Blood group data availability",
+        "handLength":"Hand length",
+        "birthDateDataAvailability":"Birth date data availability",
+        "shoulderHeightDataAvailability":"Shoulder height data availability",
+        "statureMeasuredTimestampCorrectess":"Stature measured timestamp correctess",
+        "residencePlaceTimestampCorrectess":"Residence place timestamp correctess",
+        "faceLengthDataAvailability":"Face length data availability",
+        "residencePlace":"Residence place",
+        "neckCircumference":"Neck circumference",
+        "footBreadthDataAvailability":"Foot breadth data availability",
+        "medicalProceduresDataAvailability":"Medical procedures data availability",
+        "footLengthDataAvailability":"Foot length data availability",
+        "dactylionHeightTimestampCorrectess":"Dactylion height timestamp correctess",
+        "hairColorFisherSaller":"Hair color Fisher-Saller",
+        "faceBreadthDataAvailability":"Face breadth data availability",
+        "lowerLimbLength1DataAvailability":"Lower limb length (1) data availability",
+        "birthDate":"Birth date",
+        "residencePlaceDataAvailability":"Residence place data availability",
+        "tibialHeightTimestamp":"Tibial height timestamp",
+        "whrDataAvailability":"WHR data availability",
+        "headBreadthTimestampCorrectess":"Head breadth timestamp correctess",
+        "shoulderHeightTimestamp":"Shoulder height timestamp",
+        "lowerLimbLength1Timestamp":"Lower limb length (1) timestamp",
+        "handBreadthTimestamp":"Hand breadth timestamp",
+        "shoulderHeight":"Shoulder heigth",
+        "weightMeasuredDataAvailability":"Weight measured data availability"
+      }
+    },
+    "upload": {
+      "placeholder": "Add json file with samples",
+      "message": {
+        "success": "Samples sent for upload successfully",
+        "error": "Error while sending samples",
+        "emptyFile": "Please choose file to upload",
+        "emptyBiobank": "Please choose biobank"
+      }
+    },
+    "project": {
+      "get": {
+        "message": {
+          "error": "Error while getting user projects"
+        }
+      },
+      "button": {
+        "toggleColumns": "Toggle Columns"
+      },
+      "query": {
+        "add": {
+          "message": {
+            "success": "Query added to project successfully",
+            "error": "Error while adding query to project",
+            "fail": {
+              "projectQuery": "Project query cannot be empty, please type query in search field",
+              "emptyQuery": "Query cannot be empty",
+              "emptyProject": "To add query, please select project"
+            }
+          }
+        }
+      },
+      "buttons": {
+        "execute": "Show",
+        "addToProject": "Add to project"
+      },
+      "execute": {
+        "empty": "Project is empty",
+        "notChoosedProject": "Please choose project to execute"
+      }
+    }
+  },
+
+  "collections": {
+    "header": "Collections",
+    "additionalInfo": "List of collections",
+    "buttons": {
+      "create": "Create Collection"
+    },
+    "table": {
+      "labels": {
+        "collectionId": "Id of collection",
+        "biobankId": "Id of biobank",
+        "actions": "Actions"
+      }
+    },
+    "manage": {
+      "delete": {
+        "confirm": "Are you sure you want to delete collection with id",
+        "header": "Delete collection",
+        "message": {
+          "success": "Collection removed succesfully",
+          "error": "Error while removing collection"
+        }
+      }
+    }
+  },
+  "searchBox": {
+    "samples": {
+      "placeholder": "Press ctrl + space to get query hints"
+    },
+    "placeholder": "Search..."
+  },
+  "projects": {
+    "header": "Projects",
+    "info": {
+      "error": "Error while getting project informations"
+    },
+    "chat": {
+      "channel": {
+        "all": "All"
+      },
+      "button": {
+        "send": "Send",
+        "close": "Close"
+      },
+      "placeholders": {
+        "message": "Enter message"
+      }
+    },
+    "table": {
+      "labels": {
+        "_id": "Id",
+        "name": "Name",
+        "description": "Description",
+        "queries": "Queries",
+        "actions": "Actions",
+        "lastExecutedAt": "Last executed at",
+        "rowsNum": "Number of results",
+        "rowsNumDisp": "Number of results in shared systems",
+        "executedNever": "Never",
+        "executedRowsNone": "None",
+        "status": "Status",
+        "sampleType": "Samples type"
+      },
+      "actions": {
+        "queries": {
+          "show": "Show queries",
+          "hide": "Hide querries"
+        }
+      }
+    },
+    "manage": {
+      "tabs": {
+        "info": "Info",
+        "queries": "Queries",
+        "execution": "Execution",
+        "settings": "Settings"
+      },
+      "samples": {
+        "share": {
+          "success": "Samples shared successfully",
+          "error": "Error while sharing samples"
+        }
+      },
+      "share": {
+        "success": "Project shared succesfully for user",
+        "error": "Error while sharing project with other user. Make sure that user exists and isn't already added"
+      },
+      "header": {
+        "info": "Project informations",
+        "queries": "Project queries",
+        "execution": "Project execution",
+        "shareProject": "Share your project with others",
+        "shareSamples": "Share samples for project users",
+        "users": "Project users"
+      },
+      "labels": {
+        "username": "Username",
+        "share": "Share",
+        "biobank": "Biobank",
+        "name": "Name",
+        "description": "Description",
+        "samplesType": "Samples type",
+        "none": "None",
+        "status": "Status",
+        "list": {
+          "owner": "Your own projects",
+          "member": "Projects shared for you",
+          "biobank": "Projects accessed samples"
+        },
+        "never": "Never",
+        "samplesShare": "Share samples",
+        "sharedBiobanks": "Protected samples shared from biobanks"
+      },
+      "placeholders": {
+        "name": "Type project name",
+        "description": "Type project description"
+      },
+      "buttons": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      },
+      "message": {
+        "create": {
+          "validation": "Project name should have 3-70 singns and doesn't contain underscores",
+          "success": "Project created successfully",
+          "error": "Error while creating project",
+          "exists": "Project with given name already exists",
+          "badRequest": "Project with given name already exists"
+        },
+        "edit": {
+          "success": "Project edited successfully",
+          "error": "Error while modifying project"
+        }
+      },
+      "query": {
+        "remove": {
+          "header": "Remove query",
+          "message": "Are you sure you want to delete query",
+          "success": "Query removed successfully",
+          "error": "Error while removing query"
+        }
+      },
+      "delete": {
+        "header": "Delete project",
+        "confirmation": "Are you sure you want to delete project named",
+        "success": "Project removed successfully",
+        "error": "Error while removing project"
+      },
+      "title": {
+        "create": "Create project",
+        "edit": "Edit project"
+      },
+      "request": {
+        "message": "Are you sure, you want to send requests for project named ",
+        "header": "Request for project",
+        "success": "Project requested succesfully",
+        "error": "Error while requesting project. Make sure that project is not empty.",
+        "dispersion": "Do you want to request for data from shared systems?"
+      },
+      "submit": {
+        "message": "Are you sure, you want to submit project named ",
+        "header": "Submit project",
+        "success": "Project submited succesfully"
+      },
+      "close": {
+        "message": "Are you sure, you want to close project named ",
+        "header": "Close project",
+        "success": "Project closed successfully",
+        "error": "Error while closing project"
+      }
+    },
+    "execute": {
+      "message": {
+        "equal": "Project executed successfully. There is not changes in samples count from last execution.",
+        "notEqual": "Project executed succesfully. There are differencies between actual and last execution.",
+        "firstExec": "Project executed succesfully.",
+        "new": "New",
+        "removedFromBiobank": "Removed all samples from biobanks",
+        "error": "Error while executing project. Make sure that project is not empty."
+      },
+      "labels": {
+        "biobanksCount": "Biobanks",
+        "collectionsCount": "Collections"
+      },
+      "get": {
+        "error": "Erro while getting samples"
+      }
+    },
+    "buttons": {
+      "execute": "Execute",
+      "openChat": "Open chat"
+    },
+    "search": {
+      "message": {
+        "error": "Error while getting projects"
+      }
+    }
+  },
+  "adminPanel": {
+    "header": "Admin panel",
+    "tabs": {
+      "titles": {
+        "users": "Users",
+        "roles": "Roles",
+        "dispersion": "Dispersion"
+      },
+      "headers": {
+        "createUser": "Create user",
+        "userRole": "Add role for user",
+        "createRole": "Create role",
+        "userManage": "Manage user",
+        "dispersionManage": "Manage dispersion instances"
+      }
+    },
+    "usersTable": {
+      "labels": {
+        "id": "Id",
+        "username": "Username",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email"
+      }
+    },
+    "disperionInstanceTable": {
+      "message": {
+        "get": {
+          "error": "Error while getting dispersion instances"
+        }
+      },
+      "labels": {
+        "id": "Id",
+        "name": "Name",
+        "baseUrl": "Base Url",
+        "actions": "Actions"
+      }
+    },
+    "rolesTable": {
+      "labels": {
+        "id": "Id",
+        "name": "Name",
+        "description": "Description"
+      },
+      "placeholders": {
+
+      }
+    },
+    "forms": {
+      "deleteDispersionInstance": {
+        "confirm": {
+          "header": "Delete dispersion instance",
+          "title": "Are you sure you want to delete instance named"
+        },
+        "message": {
+          "success": "Dispersion instance deleted succesfully",
+          "error": "Error while deleting dispersion instance"
+        }
+      },
+      "createDispersionInstance": {
+        "headers": {
+          "create": "Create new dispersion instance",
+          "edit": "Edit dispersion instance"
+        },
+        "labels": {
+          "name": "Name",
+          "token": "Token",
+          "baseUrl": "Base Url"
+        },
+        "placeholders": {
+          "name": "Name",
+          "baseUrl": "Base Url"
+        },
+        "message": {
+          "success": "Dispersion instance saved succesfully",
+          "error": "Error while saving dispersion instance",
+          "wrongTokenError": "Provided token is invalid"
+        }
+      },
+      "createUser": {
+        "label": {
+          "email": "Email",
+          "username": "Username"
+        },
+        "placeholder": {
+          "email": "Please type user's email",
+          "username": "Please type username"
+        },
+        "button": {
+          "reset": "Reset",
+          "submit": "Submit"
+        },
+        "confirm": {
+          "title": "Create user confirmation",
+          "message": {
+            "part1": "Are you sure you want to create user with username"
+          }
+        },
+        "message": {
+          "success": "User created succesfully",
+          "error": "Error while creating new user"
+        }
+      },
+      "addUserRole": {
+        "label": {
+          "user": "User",
+          "rolesToAdd": "Roles to add",
+          "userRoles": "User roles"
+        },
+        "placeholder": {
+          "user": "Select user",
+          "role": "Select role"
+        },
+        "button": {
+          "reset": "Reset",
+          "submit": "Submit"
+        },
+        "confirm": {
+          "title": "Add role for user confirmation",
+          "message": {
+            "part1": "Are you sure you want to add role",
+            "part2": "for user"
+          }
+        },
+        "message": {
+          "success": "Role added for user succesfully",
+          "error": "Error while adding role for user"
+        }
+      },
+      "deleteUserRole": {
+        "message": {
+          "success": "User role deleted successfully",
+          "error": "Error while removing user role"
+        }
+      },
+      "createRole": {
+        "label": {
+          "name": "Name",
+          "description": "Description"
+        },
+        "placeholder": {
+          "name": "Name",
+          "description": "Description"
+        },
+        "button": {
+          "reset": "Reset",
+          "submit": "Submit"
+        },
+        "confirm": {
+          "title": "Create role confirmation",
+          "message": {
+            "part1": "Are you sure you want to create role named"
+          }
+        }
+      },
+      "getUserRole": {
+        "message": {
+          "error": "Error while getting user roles"
+        }
+      },
+      "getUsers": {
+        "message": {
+          "error": "Error while getting users list"
+        }
+      },
+      "manageUser": {
+        "buttons": {
+          "disable": "Disable",
+          "enable": "Enable"
+        },
+        "enable": {
+          "message": {
+            "success": "User enabled succesfully",
+            "error": "Error while enabling user"
+          }
+        },
+        "disable": {
+          "message": {
+            "success": "User disabled successfully",
+            "error": "Error while disabling user"
+          }
+        }
+      }
+    },
+    "dispersion": {
+      "buttons": {
+        "createWithToken": "Create new instance with token",
+        "createWithoutToken": "Create new instance without token"
+      }
+    }
+  },
+  "footer": {
+    "license": {
+      "header": "Licence details",
+      "details": "Details of the app license"
+    },
+    "contact": {
+      "header": "Contact",
+      "address": "Address",
+      "mobile": "Mobile",
+      "email": "e-mail",
+      "content": {
+        "address": "ADD ADDRESS",
+        "mobile": "ADD MOBILE",
+        "email": "ADD EMAIL"
+      }
+    },
+    "socialMedia": {
+      "header": "Social Media"
+    },
+    "rightsReserved": "2018. All Rights Reserved. Bioface"
+  }
+}

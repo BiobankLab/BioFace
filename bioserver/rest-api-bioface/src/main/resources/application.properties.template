@@ -1,0 +1,72 @@
+springfox.documentation.swagger.v2.path=/api-docs
+# Context path for server
+server.servlet.context-path=/bioface
+# Server port
+server.port=8082
+spring.jackson.date-format=com.bioface.invoker.RFC3339DateFormat
+spring.jackson.serialization.WRITE_DATES_AS_TIMESTAMPS=false
+# MongoDB address
+spring.data.mongodb.host=localhost
+# MongoDB port
+spring.data.mongodb.port=27017
+# MongoDB database name
+spring.data.mongodb.database=bioface
+# Apache solr URL (with core - in this case "bioface")
+solr.url=http://localhost:8983/solr/bioface
+
+spring.servlet.multipart.max-file-size=100MB
+spring.servlet.multipart.max-request-size=100MB
+
+#location where files should be saved
+file.upload.location=/opt/bioface/data/
+log.file.path = /opt/bioface/logs
+#location for file with sample fields order
+samples.fields.order.file=/opt/bioface/etc/fieldsOrder.json
+
+# Keycloak auth URL
+ux.keycloak.auth-server-url=http://localhost:8081/auth
+keycloak.auth-server-url=http://localhost:8081/auth
+# Keycloak realm name
+keycloak.realm=bioface
+keycloak.ssl-required=external
+# Keycloak client name
+keycloak.resource=bioface-client
+# Keycloak client secret
+keycloak.credentials.secret=54b6d77f-f9e4-4008-a8d4-f2a16c1d8d1d
+keycloak.confidential-port=0
+# Attribute returned by principal
+keycloak.principal-attribute=preferred_username
+
+
+spring.h2.console.enabled=true
+# H2 database source
+# (!) MAKE SURE THAT FILE IS PROPERLY SECURED
+spring.datasource.url=jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE
+# H2 database username
+spring.datasource.username=sa
+# H2 database user password
+spring.datasource.password=
+spring.datasource.driver-class-name=org.h2.Driver
+spring.liquibase.enabled=true
+spring.datasource.hikari.max-active=10
+spring.datasource.tomcat.max-active=10
+spring.liquibase.change-log=classpath:db/changelog/master.xml
+
+# admin keycloak client
+admin.keycloak.client=admin-cli
+
+#(!) This user should have permission ( keycloak admin console -> users -> select user -> Role Mappings tab -> Client Roles (select realm managment) -> Add role "manage-users" )
+
+# admin username (needed for adding users from application)
+admin.keycloak.username=admin
+# admin password (needed for adding users from application)
+admin.keycloak.password=admin
+
+#Dispersion
+dispersion.institutionName=
+dispersion.privateKeyPath=
+dispersion.publicKeyPath=
+
+institution.name =
+
+dispersionInstance.url = 

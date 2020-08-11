@@ -1,0 +1,1360 @@
+[
+      {  
+         "fieldName":"sampleId",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"parentSampleId",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"accession",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"timestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"collection",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"biobank",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"owner",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"comments",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"donorId",
+         "fieldType":"plong",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },  
+      {  
+         "fieldName":"relatedIdParents",
+         "fieldType":"pints",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"relatedIdSiblings",
+         "fieldType":"pints",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"relatedIdChildren",
+         "fieldType":"pints",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"relatedIdSpouse",
+         "fieldType":"pints",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"gender",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"birthDate",
+         "fieldType":"rdate",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"birthDateCorrectess",
+         "fieldType":"text_general",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"birthDateDataAvailability",
+         "fieldType":"text_general",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ethnicGroupEgName",
+         "fieldType":"string",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ethnicGroupDataAvailability",
+         "fieldType":"text_general",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneDataAvailability",
+         "fieldType":"text_general",
+         "multiValued": false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneVonLuschan",
+         "fieldType":"pint",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneMichalski",
+         "fieldType":"pint",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneCielabL",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneCielabA",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneCielabB",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"skinToneTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorHcPalet",
+         "fieldType":"pint",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorFisherSaller",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorCielabL",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorCielabA",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorCielabB",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorDescriptive",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"hairColorTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightDeclarativeDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightDeclarative",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightDeclarativeTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightDeclarativeTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightMeasuredDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightMeasured",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightMeasuredTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"weightMeasuredTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureDeclarativeDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureDeclarative",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureDeclarativeTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureDeclarativeTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureMeasuredDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureMeasured",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureMeasuredTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"statureMeasuredTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"eyeColorDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"eyeColorMartinSchultz",
+         "fieldType":"pint",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"eyeColorMichalski",
+         "fieldType":"pint",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"eyeColorTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"eyeColorTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"whrDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"whr",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"whrTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"whrTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bmiDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bmi",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bmiTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bmiTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupAB0",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupRh",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupLewis",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupKell",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"bloodGroupOther",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ciDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ci",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ciTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"ciTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headLengthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headLength",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headLengthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headLengthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headBreadthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headBreadth",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headBreadthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headBreadthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceLengthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceLength",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceLengthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceLengthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceBreadthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceBreadth",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceBreadthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"faceBreadthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headCircumferenceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headCircumference",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headCircumferenceTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"headCircumferenceTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"neckCircumferenceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"neckCircumference",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"neckCircumferenceTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"neckCircumferenceTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+
+
+      {  
+         "fieldName":"dactylionHeightDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"dactylionHeight",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"dactylionHeightTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"dactylionHeightTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"shoulderHeightDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"shoulderHeight",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"shoulderHeightTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"shoulderHeightTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength1DataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength1",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength1Timestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength1TimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength2DataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength2",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength2Timestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"lowerLimbLength2TimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"tibialHeightDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"tibialHeight",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"tibialHeightTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"tibialHeightTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+
+
+      {  
+         "fieldName":"chestCircumferenceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"chestCircumference",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"chestCircumferenceTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"chestCircumferenceTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"waistCircumferenceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"waistCircumference",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"waistCircumferenceTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"waistCircumferenceTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+
+
+      {  
+         "fieldName":"handLengthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handLength",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handLengthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handLengthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handBreadthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handBreadth",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handBreadthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"handBreadthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footLengthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footLength",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footLengthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footLengthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footBreadthDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footBreadth",
+         "fieldType":"pdouble",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footBreadthTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"footBreadthTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"birthPlace",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"birthPlaceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"residencePlace",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"residencePlaceDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"residencePlaceTimestamp",
+         "fieldType":"rdate",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"residencePlaceTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"questionnaire",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesSnomed",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesIcd10",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesNoCode",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesTimestamp",
+         "fieldType":"rdate",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresDataAvailability",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresIcd9",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresNoCode",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresSnomed",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresTimestamp",
+         "fieldType":"rdate",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialType",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleStorageTemperature",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialTissueSource",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialTissueKind",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialTissueMethod",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialWholeBloodMethod",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialSerumInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialPlasmaInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+
+      {  
+         "fieldName":"sampleMaterialBuffyCoatInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialFfpeMethod",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialFfpeKind",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialFfpeSource",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialUrineInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialSalivaInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialSalivaMethod",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialStoolInfo",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialNucleidAcidKind",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialNucleidAcidSource",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialNucleidAcidMethod",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialOther",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsPreCt",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsPostCt",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsPrimaryContainer",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsStorageTemperature",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsLid",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsMarkers",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsFasting",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleQmsDocumentation",
+         "fieldType":"text_general",
+         "multiValued":false,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"medicalProceduresTimestampCorrectess",
+         "fieldType":"text_general",
+         "multiValued":true,
+	 "stored": true,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesTypeStr",
+         "fieldType":"string",
+         "multiValued":true,
+	 "stored": false,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"diseasesIcd10Str",
+         "fieldType":"string",
+         "multiValued":true,
+	 "stored": false,
+	 "indexed": true
+      },
+      {  
+         "fieldName":"sampleMaterialTypeStr",
+         "fieldType":"string",
+         "multiValued":true,
+	 "stored": false,
+	 "indexed": true
+      }
+]

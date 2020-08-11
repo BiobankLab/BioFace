@@ -1,0 +1,40 @@
+# Context path for server
+server.servlet.context-path=/
+# Server port
+server.port=8084
+spring.h2.console.enabled=true
+# H2 database source
+# (!) MAKE SURE THAT FILE IS PROPERLY SECURED
+spring.datasource.url=jdbc:h2:~/testdis;DB_CLOSE_ON_EXIT=FALSE
+# H2 database username
+spring.datasource.username=sa
+# H2 database user password
+spring.datasource.password=
+spring.datasource.driver-class-name=org.h2.Driver
+
+spring.liquibase.enabled=true
+spring.datasource.hikari.max-active=10
+spring.datasource.tomcat.max-active=10
+spring.liquibase.change-log=classpath:db/changelog/master.xml
+
+file.upload.location=
+
+# Apache solr URL (with core - in this case "dispersion")
+solr.url=http://localhost:8983/solr/dispersion
+
+private.key.path=
+public.key.path=
+
+institution.name= 
+
+jwt.secret=
+
+## MULTIPART (MultipartProperties)
+# Enable multipart uploads
+spring.servlet.multipart.enabled=true
+# Threshold after which files are written to disk.
+spring.servlet.multipart.file-size-threshold=2KB
+# Max file size.
+spring.servlet.multipart.max-file-size=200MB
+# Max Request Size
+spring.servlet.multipart.max-request-size=215MB

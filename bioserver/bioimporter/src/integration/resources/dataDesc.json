@@ -1,0 +1,146 @@
+{
+	"csvColumns": [
+		{
+			"name": "ID probanta",
+			"indexName": "idOfProbent",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Płeć",
+			"indexName": "sex",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Data urodzenia",
+			"indexName": "dob",
+			"type": "rdate",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Disease I",
+			"indexName": "disease1",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Data of Disease I",
+			"indexName": "dateOfDisease1",
+			"type": "rdate",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Disease II",
+			"indexName": "disease2",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Data of Disease II",
+			"indexName": "dateOfDisease2",
+			"type": "rdate",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kolor oczu",
+			"indexName": "eyeColor",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Blood group",
+			"indexName": "bloodGroup",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kolor Włosów",
+			"indexName": "hairColor",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Material I",
+			"indexName": "material1",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Data pobrania materiału I",
+			"indexName": "dateOfMaterial1",
+			"type": "rdate",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Materiał II",
+			"indexName": "material2",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Data pobrania materiału II",
+			"indexName": "dateOfMaterial2",
+			"type": "rdate",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kwestionariusz antropologiczny",
+			"indexName": "antropologicalQuestionaire",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kwestionariusz SES",
+			"indexName": "sesQuestionaire",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kwestionariusz psychologiczny",
+			"indexName": "pint",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Kwestionariusz nałogi",
+			"indexName": "psychologicalQuestionaire",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "ELSI",
+			"indexName": "elsi",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Access",
+			"indexName": "access",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Collection ID",
+			"indexName": "collectionId",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Institution",
+			"indexName": "institution",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"name": "Region of Origin",
+			"indexName": "regionOfOrigin",
+			"type": "string",
+			"displayValue": "ID probanta"
+		},
+		{
+			"indexName": "timestamp",
+			"type": "rdate"
+		}
+	]
+}

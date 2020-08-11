@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "Bioface": "Bioface",
+    "Biobank": "Biobank",
+    "Collections": "Collections",
+    "Samples": "Samples",
+    "Profile": "Profile",
+    "SearchButton": "Search",
+    "SearchPlaceholder": "Search",
+    "Signout": "Signout"
+  },
+
+  "samples": {
+
+  },
+
+  "biobanks": {
+
+  },
+
+  "collections": {
+
+  }
+}

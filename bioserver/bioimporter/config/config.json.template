@@ -1,0 +1,18 @@
+{
+	"csvFiles": [
+		{
+			"path":"/home/plapinski/Praca/BioBank/data.csv",
+			"descriptionPath":"/home/plapinski/Praca/BioBank/dataDesc.json"
+		}
+	],
+	"mongo" : {
+		"url": "mongodb://localhost" 
+	},
+	"solr" : {
+		"url": "http://localhost:8983/solr/bioface",
+		"idColumns": ["biobankID","biocollectionID","ID probanta"],
+		"schemaRemoveFields": [],
+		"schemaAddFields": ["all_fields"]
+	}
+	
+}

@@ -1,0 +1,438 @@
+swagger: "2.0"
+info:
+  description: "Bioface REST API"
+  version: "1.0.0"
+  title: "Bioface"
+  termsOfService: "TODO"
+host: "localhost"
+tags:
+- name: "biobank"
+  description: "Operations on Biobanks"
+- name: "collection"
+  description: "Operations on Collections"
+- name: "sample"
+  description: "Operations on Samples"
+schemes:
+- "http"
+
+paths:
+  /biobank:
+    get:
+      tags:
+      - "biobank"
+      summary: "Get Biobank"
+      description: ""
+      operationId: "getBiobank"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Successful getting Biobanks"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Biobank"
+        400:
+          description: "Bad request"
+    post:
+      tags:
+      - "biobank"
+      summary: "Add Biobank"
+      description: ""
+      operationId: "addBiobank"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "biobank"
+        description: "Biobank"
+        required: true
+        schema:
+          $ref: "#/definitions/Biobank"
+      responses:
+        200:
+          description: "Successful added Biobank"
+        400:
+          description: "Bad request"
+    put:
+      tags:
+        - "biobank"
+      summary: "Update Biobank"
+      description: ""
+      operationId: "updateBiobank"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: "Biobank"
+        required: true
+        schema:
+          $ref: "#/definitions/Biobank"
+      responses:
+        200:
+          description: "Successful updated Biobank"
+        400:
+          description: "Bad request"
+        404:
+          description: "Biobank not found"
+  /biobank/{biobankId}:
+    get:
+      tags:
+      - "biobank"
+      summary: "Get Biobank by id"
+      description: ""
+      operationId: "getBiobankById"
+      produces:
+      - "application/json"
+      parameters: 
+      - name: "biobankId"
+        in: "path"
+        description: "Id of Biobank"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful getting Biobank"
+          schema:
+            $ref: "#/definitions/Biobank"
+        400:
+          description: "Bad request"
+  /collection:
+    get:
+      tags:
+      - "collection"
+      summary: "Get Collection"
+      description: ""
+      operationId: "getCollection"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Successful getting Collections"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Collection"
+        400:
+          description: "Bad request"
+    post:
+      tags:
+      - "collection"
+      summary: "Add Collection"
+      description: ""
+      operationId: "addColection"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "collection"
+        required: true
+        schema:
+          $ref: "#/definitions/Collection"
+      responses:
+        200:
+          description: "Successful added Collection"
+        400:
+          description: "Bad request"
+    put:
+      tags: 
+      - "collection"
+      summary: "Update Collection"
+      description: ""
+      operationId: "updateCollection"
+      consumes: 
+      - "application/json"
+      produces: 
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "collection"
+        required: true
+        schema:
+          $ref: "#/definitions/Collection"
+      responses:
+        200:
+          description: "Successful updated Collection"
+        404:
+          description: "Collection not found"
+        400:
+          description: "Bad request"
+    
+  /collection/{collectionId}:
+    get:
+      tags: 
+      - "collection"
+      summary: "Get Collection by id"
+      description: ""
+      operationId: "getCollectionById"
+      produces: 
+      - "application/json"
+      parameters: 
+      - in: "path"
+        name: "collectionId"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful get Collection"
+          schema:
+            $ref: "#/definitions/Collection"
+        404:
+          description: "Collection not found"
+        400:
+          description: "Bad request"
+  /sample:
+    get:
+      tags:
+      - "sample"
+      summary: "Get sample"
+      description: ""
+      operationId: "getSamples"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Successful getting samples"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Sample"
+        400:
+          description: "Bad request"
+    post:
+      tags: 
+      - "sample"
+      summary: "Add Sample"
+      description: ""
+      operationId: "addSample"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "sample"
+        required: true
+        schema:
+          $ref: "#/definitions/Sample"
+      responses:
+        200:
+          description: "Successful added Sample"
+        400:
+          description: "Bad request"
+    put:
+      tags: 
+      - "sample"
+      summary: "Update Sample"
+      description: ""
+      operationId: "updateSample"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/Sample"
+      responses:
+        200:
+          description: "Successful updated Sample"
+        400:
+          description: "Bad request"
+        404:
+          description: "Sample not found"
+  /sample/{sampleId}:
+    get:
+      tags: 
+      - "sample"
+      summary: "Get Sample by id"
+      description: ""
+      operationId: "getSampleById"
+      produces:
+      - "application/json"
+      parameters: 
+      - in: "path"
+        name: "sampleId"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful getting Sample"
+          schema:
+            $ref: "#/definitions/Sample"
+        404:
+          description: "Sample not found"
+        400:
+          description: "Bad request"
+definitions:
+  EnumBloodGroup:
+    type: "string"
+    enum:
+      - value: "A+"
+        name: "A_PLUS"
+      - value: "B+"
+        name: "B_PLUS"
+      - value: "AB+"
+        name: "AB_PLUS"
+      - value: "0+"
+        name: "0_PLUS"
+      - value: "A-"
+        name: "A_MINUS"
+      - value: "B-"
+        name: "B_MINUS"
+      - value: "AB-"
+        name: "AB_MINUS"
+      - value: "0-"
+        name: "0_MINUS"
+  EnumAccess:
+    type: "string"
+    enum: 
+      - "Open"
+      - "For research only"
+      - "No access"
+  EnumSex:
+    type: "string"
+    enum:
+      - "Male"
+      - "Female"
+      - "Unknown"
+      - "Undifferentiated" 
+  Biobank:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+        description: "Biobank ID"
+      acronym:
+        type: "string"
+      name:
+        type: "string"
+      url:
+        type: "string"
+      juristicPerson:
+        type: "string"
+      country:
+        type: "string"
+      contactInformation:
+        type: "array"
+        items:
+          $ref: "#/definitions/ContactInformation"
+  Collection:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+        description: "Collection Id"
+      acronym:
+        type: "string"
+      name:
+        type: "string"
+      description:
+        type: "string"
+      biobank:
+        type: "object"
+        properties:
+          dbId:
+            type: "string"
+  Sample:
+    type: "object"
+    properties:
+      collection:
+        type: "object"
+        properties:
+          dbId:
+            type: "string"
+      donatorId:
+        type: "string"
+        description: "ID of person who donated sample"
+      sex:
+        $ref: '#/definitions/EnumSex'
+      birthDate:
+        type: "string"
+        format: "DateTime"
+      eyeColor:
+        type: "integer"
+        format: "int32"
+      bloodGroup:
+        $ref: '#/definitions/EnumBloodGroup'
+      hairColor:
+        type: "string"
+      psychologicalQuestionnaire:
+        type: "boolean"
+      addictionQuestionnaire:
+        type: "boolean"
+      elsi:
+        type: "string"
+      access:
+        $ref: '#/definitions/EnumAccess'
+      projectName:
+        type: "string"
+      institution:
+        type: "string"
+      regionOfOrigin:
+        type: "string"
+      material:
+        type: "array"
+        items:
+          $ref: "#/definitions/Material"
+      diesease:
+        type: "array"
+        items:
+          $ref: "#/definitions/Diesease"
+  Material:
+    type: "object"
+    properties:
+      date:
+        type: "string"
+        format: "date"
+      value:
+        type: "string"
+  Diesease:
+    type: "object"
+    properties:
+      date:
+        type: "string"
+        format: "date"
+      ontology:
+        type: "string"
+      ontologyVersion:
+        type: "string"
+      ontologyCode:
+        type: "string"
+      ontologyDescription:
+        type: "string"
+      freeInformation:
+        type: "string"
+  ContactInformation:
+    type: "object"
+    properties:
+      firstName:
+        type: "string"
+      lastName:
+        type: "string"
+      phone:
+        type: "string"
+      email:
+        type: "string"
+      address:
+        type: "string"
+      zip:
+        type: "string"
+      city:
+        type: "string"
+      country:
+        type: "string"
+  
+      
+         
+      
+  

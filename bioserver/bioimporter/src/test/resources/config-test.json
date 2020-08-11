@@ -1,0 +1,20 @@
+{
+	"csvFiles": [
+		{
+			"path":"data.csv",
+			"descriptionPath":"dataDesc.json"
+		}
+	],
+	"riak": {
+		"port": 8809,
+		"nodes": ["127.0.0.1"]
+	},
+	"mongo" : {
+		"url": "mongodb://localhost" 
+	},
+	"solr" : {
+		"url": "",
+		"idColumns": ["biobankID","biocollectionID","ID probanta"]
+	}
+	
+}

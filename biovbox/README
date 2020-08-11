@@ -1,0 +1,33 @@
+user dla aplikacji:
+bioface/123Bio#@!
+
+root
+bio!@#face
+
+udostępnione porty
+
+host -> guest
+
+10022 -> 22
+10080 -> 80
+18080 -> 8080
+18983 -> 8983
+
+Queries:
+dob:[1900 TO NOW]
+dob:(1995 TO 1995)
+dob:[1900 TO NOW] AND WUM
+projectName:PL82 OR sex:F OR eyeColor:3
+projectName:PL82 AND sex:F AND eyeColor:3
+institution:WUM
+hairColor:C
+
+(projectName:PL82 AND sex:F AND eyeColor:3) OR institution:WUM
+
+projectName:PL*
+projectName:PL8?
+
+disease1:
+-inStock:false
+
+/Users/mdylag/workspaces/bcp/

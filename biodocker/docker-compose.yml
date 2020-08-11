@@ -1,0 +1,48 @@
+version: "2"
+
+services:
+  coordinator:
+    image: basho/riak-kv
+    ports:
+      - "8087:8087"
+      - "8098:8098"
+    environment:
+      - CLUSTER_NAME=riakkv
+    labels:
+      - "com.basho.riak.cluster.name=riak-kv"
+    volumes:
+      - schemas:/etc/riak/schemas
+      - ./user.conf:/etc/riak/user.conf
+    network_mode: bridge
+
+  member:
+    image: basho/riak-kv
+    ports:
+      - "8087"
+      - "8098"
+    labels:
+      - "com.basho.riak.cluster.name=riak-kv"
+    links:
+      - coordinator
+    network_mode: bridge
+    depends_on:
+      - coordinator
+    environment:
+      - CLUSTER_NAME=riakkv
+      - COORDINATOR_NODE=coordinator
+
+  redis:
+    image: redis
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: redis
+#    networks:
+#      - redis-net
+    volumes:
+      - redis-data:/data
+
+volumes:
+  schemas:
+  redis-data:
+
+#networks:
+#  redis-net:

@@ -1,0 +1,28 @@
+{
+  "id": -13315,
+  "donorId": "anim sed",
+  "relatedId": {},
+  "gender": "Transgender",
+  "age": 62712545,
+  "ethnic_group": "mixed",
+  "diseases": [
+    {
+      "icd-10": "M8A",
+      "noCode": "veniam nostrud",
+      "timestamp": {
+        "date": "3931-04-03T20:34:28.439Z",
+        "dateCorrectess": "laborum dolor"
+      },
+      "snomed": -5449043
+    },
+    {
+      "icd-10": "Z3W.5W",
+      "noCode": "fugiat aliquip commodo Lorem",
+      "timestamp": {
+        "date": "2591-10-10T02:27:27.044Z",
+        "dateCorrectess": "nostrud offici"
+      },
+      "snomed": 38456264
+    }
+  ]
+}

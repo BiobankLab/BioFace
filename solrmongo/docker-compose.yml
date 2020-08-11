@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mongodb:
+    build: ./mongodb
+    image: mongobioface:1.0
+    volumes:
+      - mongo-data:/data/db
+      - mongo-dump:/dump
+      - ./mongodb/scripts:/scripts
+    ports:
+      - "27017:27017"
+volumes:
+  mongo-data:
+  mongo-dump:

@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+src/libs/parser/*.js
+src/libs/*.js
+src/libs/*.css
