@@ -1,7 +1,8 @@
 conn = new Mongo();
 db = conn.getDB(databaseName);
 db.getSiblingDB(databaseName);
-db.system.js.save({
+
+db.system.js.insertOne({
 _id: "getUnreadedMessagesCountForUser",
 value : function (channel, user) {
         if(channel.messages === undefined) {
@@ -19,7 +20,7 @@ value : function (channel, user) {
 })
 
 db.createCollection("icd10_level1_dictionaries");
-db.icd10_level1_dictionaries.remove({});
+db.icd10_level1_dictionaries.deleteMany({});
 db.icd10_level1_dictionaries.insertMany([
 { 
 	"name": "Certain infectious and parasitic diseases", 
@@ -246,7 +247,7 @@ db.icd10_level1_dictionaries.insertMany([
 ]);
 
 db.createCollection("icd10_level2_dictionaries");
-db.icd10_level2_dictionaries.remove({});
+db.icd10_level2_dictionaries.deleteMany({});
 db.icd10_level2_dictionaries.insertMany([
     {
         "name":"Intestinal infectious diseases",
