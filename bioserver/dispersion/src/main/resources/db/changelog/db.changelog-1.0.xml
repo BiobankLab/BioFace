@@ -12,11 +12,11 @@
 			<column name="NAME" type="varchar(255)">
 				<constraints primaryKey="true" nullable="false" />
 			</column>
-			<column name="KEY" type="varchar(500)" />
+			<column name="KEY" type="varchar(2500)" />
 			<column name="ACCESS" type="varchar(50)" />
 		</createTable>
 		<createTable tableName="TOKENS">
-			<column name="TOKEN" type="varchar(500)"></column>
+			<column name="TOKEN" type="varchar(2500)"></column>
 			<column name="USED" type="int(4)"></column>
 		</createTable>
 		<createTable tableName="LOGIN_DATA">

@@ -5,7 +5,7 @@ server.port=8084
 spring.h2.console.enabled=true
 # H2 database source
 # (!) MAKE SURE THAT FILE IS PROPERLY SECURED
-spring.datasource.url=jdbc:h2:~/testdis;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.url=jdbc:h2:~/federated_db;DB_CLOSE_ON_EXIT=FALSE
 # H2 database username
 spring.datasource.username=sa
 # H2 database user password
@@ -25,7 +25,7 @@ solr.url=http://localhost:8983/solr/dispersion
 private.key.path=
 public.key.path=
 
-institution.name= 
+institution.name=
 
 jwt.secret=
 

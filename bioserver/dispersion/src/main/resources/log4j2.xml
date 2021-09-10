@@ -5,7 +5,7 @@
 			<PatternLayout
 				pattern="%d{yyyy-MMM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
-		
+
 		<RollingFile name="MainLogs">
 			<FileName>logs/all.log</FileName>
 			<FilePattern>logs/all-%d{yyyy-MM-dd-hh}-%i.log.zip
@@ -19,7 +19,7 @@
 			</Policies>
 			<DefaultRolloverStrategy max="5" />
 		</RollingFile>
-		
+
 		<RollingFile name="InfoLogs">
 			<FileName>logs/disp.log</FileName>
 			<FilePattern>logs/disp-%d{yyyy-MM-dd-hh}-%i.log.zip
@@ -32,7 +32,7 @@
 			</Policies>
 			<DefaultRolloverStrategy max="5" />
 		</RollingFile>
-		
+
 	</Appenders>
 	<Loggers>
 		<Logger name="com.dispersion" level="error" additivity="false">
@@ -41,7 +41,7 @@
 		<Logger name="com.dispersion" level="info" additivity="false">
 			<AppenderRef ref="InfoLogs" />
 		</Logger>
-		<Root level="info">
+		<Root level="debug">
 			<AppenderRef ref="Console" />
 		</Root>
 	</Loggers>
