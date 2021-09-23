@@ -19,7 +19,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private VerifyingService verifyingService;
-	
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
@@ -33,6 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring()
 				.antMatchers("/permissions/checkToken")
+				.antMatchers("/user/add")
 				.antMatchers("/public/*")
 				.antMatchers("/h2-console/*")
 				.antMatchers("/login/");
