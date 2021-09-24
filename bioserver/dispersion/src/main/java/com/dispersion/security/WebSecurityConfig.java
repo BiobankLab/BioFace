@@ -36,7 +36,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/user/add")
 				.antMatchers("/public/*")
 				.antMatchers("/h2-console/*")
-				.antMatchers("/login/");
+				.antMatchers("/login/")
+				.antMatchers("/adminPanel/*");
 	}
 
 }
