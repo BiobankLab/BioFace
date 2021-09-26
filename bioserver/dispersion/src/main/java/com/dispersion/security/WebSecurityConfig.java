@@ -35,9 +35,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/permissions/checkToken")
 				.antMatchers("/user/add")
 				.antMatchers("/public/*")
-				.antMatchers("/h2-console/*")
 				.antMatchers("/login/")
-				.antMatchers("/adminPanel/*");
+				.antMatchers("/static/**")
+				.antMatchers("/index.html")
+				.antMatchers("/");
 	}
 
 }
