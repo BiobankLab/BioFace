@@ -33,16 +33,16 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 
 	@Autowired
 	private ISampleService iSampleService;
-	
+
 	@Autowired
 	private RestTemplate restTemplate;
 
 	@Autowired
 	private Environment environment;
-	
+
 	@Autowired
 	private IUserRoleService iUserRoleService;
-	
+
 	@Override
 	public List<DispersionInstance> getAllDispersionInstances() {
 		return dispersionInstanceRepository.findAll();
@@ -53,19 +53,20 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 		try {
 			HttpHeaders headers = new HttpHeaders();
 			headers.set("Authorization", "Bearer " + iSampleService.createToken());
-			
+
 			if(!dispersionInstance.getToken().isEmpty()) {
 				String publicKeyB64 = new String(
 						Files.readAllBytes(Paths.get(environment.getProperty("dispersion.publicKeyPath"))));
-				
+
 				BiobankForDispersion biobankForDispersion = new BiobankForDispersion();
 				biobankForDispersion.setBiobankKey(publicKeyB64);
 				biobankForDispersion.setBiobankName(environment.getProperty("dispersion.institutionName"));
-				
+				biobankForDispersion.setToken(dispersionInstance.getToken());
+
 				HttpEntity<BiobankForDispersion> entity = new HttpEntity<BiobankForDispersion>(biobankForDispersion, headers);
 				ResponseEntity<String> responseEntity = restTemplate.exchange(dispersionInstance.getBaseUrl() + "permissions/checkToken",
 						HttpMethod.POST, entity, String.class);
-				
+
 				if(responseEntity.getBody().matches("true")) {
 					dispersionInstanceRepository.save(dispersionInstance);
 					iUserRoleService.createDispersionInstanceRoles(dispersionInstance);
@@ -82,9 +83,9 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 					String message = "Error while saving dispersion instance ";
 					log.error(message, e);
 				}
-				
+
 			}
-			
+
 		} catch (Exception e) {
 			String message = "Error while saving dispersion instance ";
 			log.error(message, e);
@@ -102,17 +103,17 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 		}
 
 	}
-	
+
 	public BasicPaginationQueryResponse<Job> getDispersionJobs(BasicPaginationQueryRequest request) {
-		
+
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Authorization", "Bearer " + iSampleService.createToken());
 		HttpEntity<BasicPaginationQueryRequest> entity = new HttpEntity<BasicPaginationQueryRequest>(request, headers);
 		ResponseEntity<BasicPaginationQueryResponse<Job>> responseEntity = restTemplate.exchange(environment.getProperty("dispersionInstance.url") + "dispersionJob/",
 				HttpMethod.POST, entity, new ParameterizedTypeReference<BasicPaginationQueryResponse<Job>>() {});
-		
+
 		return responseEntity.getBody();
-		
+
 	}
 
 }

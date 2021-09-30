@@ -32,6 +32,8 @@ institution.name=
 
 jwt.secret=
 
+dispersion.address=http://localhost
+
 ## MULTIPART (MultipartProperties)
 # Enable multipart uploads
 spring.servlet.multipart.enabled=true
