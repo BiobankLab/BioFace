@@ -87,10 +87,8 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		super.configure(http);
-
-		http.csrf().disable();
-		http.authorizeRequests().antMatchers("/static/**", "/public/**", "/index.html", "/sso/login", "/favicon.ico")
-				.permitAll().anyRequest().authenticated().and().cors();
+		http.cors().and().csrf().disable().authorizeRequests().antMatchers("/static/**", "/public/**", "/index.html", "/sso/login", "/favicon.ico")
+				.permitAll().anyRequest().authenticated();
 
 	}
 }

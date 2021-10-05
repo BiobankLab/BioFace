@@ -22,11 +22,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable();
-		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-		http.addFilterBefore(new JwtTokenFilter(verifyingService), RequestHeaderAuthenticationFilter.class);
-		http.cors();
-		http.authorizeRequests().anyRequest().authenticated();
+		http.cors()
+				.and()
+				.csrf().disable()
+				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+				.and()
+				.addFilterBefore(new JwtTokenFilter(verifyingService), RequestHeaderAuthenticationFilter.class)
+				.authorizeRequests().anyRequest().authenticated();
 	}
 
 	@Override

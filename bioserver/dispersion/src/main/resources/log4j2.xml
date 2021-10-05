@@ -41,7 +41,7 @@
 		<Logger name="com.dispersion" level="info" additivity="false">
 			<AppenderRef ref="InfoLogs" />
 		</Logger>
-		<Root level="info">
+		<Root level="trace">
 			<AppenderRef ref="Console" />
 		</Root>
 	</Loggers>

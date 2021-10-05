@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.dispersion.model.BasicPaginationQueryRequest;
@@ -21,14 +18,16 @@ public class SamplesController {
 
 	@Autowired
 	private ISamplesService iSamplesService;
-	
-	@RequestMapping(value = "/countSamples", produces =  { "application/json" }, method = RequestMethod.POST) 
+
+	@CrossOrigin
+	@RequestMapping(value = "/countSamples", produces =  { "application/json" }, method = RequestMethod.POST)
 	public ResponseEntity<Long> countSamples(Principal principal, @RequestBody BasicPaginationQueryRequest queryRequest) {
 			return new ResponseEntity<Long>(
 					iSamplesService.countSamplesForQuery(principal.getName(), queryRequest), HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/searchSample", produces =  { "application/json" }, method = RequestMethod.POST) 
+	@CrossOrigin
+	@RequestMapping(value = "/searchSample", produces =  { "application/json" }, method = RequestMethod.POST)
 	public ResponseEntity<String> getSamples(Principal principal, @RequestBody BasicPaginationQueryRequest queryRequest) {
 		try {
 			return new ResponseEntity<String>(
@@ -39,7 +38,7 @@ public class SamplesController {
 		            .body(e.getMessage());
 		}
 	}
-	
+
 	@RequestMapping(value = "/addSamples", method = RequestMethod.POST)
 	public ResponseEntity<Void> addSamples(@RequestParam("file") MultipartFile file) throws Exception {
 		iSamplesService.importSamples(file);
