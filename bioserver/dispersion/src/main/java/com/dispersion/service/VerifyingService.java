@@ -119,7 +119,7 @@ public class VerifyingService implements IVerifyingService {
 		try {
 			key.replaceAll("\n", "");
 			key = key.replace("-----BEGIN PUBLIC KEY-----", "")
-					.replace("-----END PUBLIC KEY-----", "").replaceAll("\n", "").replaceAll("\r", "").replaceAll("ssh-rsa ", "");
+					.replace("-----END PUBLIC KEY-----", "").replaceAll("\n", "").replaceAll("\r", "");
 			byte[] decoded = Base64.decodeBase64(key);
 			X509EncodedKeySpec keySpec = new X509EncodedKeySpec(decoded);
 			KeyFactory keyFactory = KeyFactory.getInstance("RSA");
