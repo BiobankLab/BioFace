@@ -64,14 +64,17 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 				biobankForDispersion.setToken(dispersionInstance.getToken());
 
 				HttpEntity<BiobankForDispersion> entity = new HttpEntity<BiobankForDispersion>(biobankForDispersion, headers);
+
+				log.info("Request send to dispersion instance: " + entity);
 				ResponseEntity<String> responseEntity = restTemplate.exchange(dispersionInstance.getBaseUrl() + "permissions/checkToken",
 						HttpMethod.POST, entity, String.class);
 
 				if(responseEntity.getBody().matches("true")) {
+					log.info("Correct token, saving");
 					dispersionInstanceRepository.save(dispersionInstance);
 					iUserRoleService.createDispersionInstanceRoles(dispersionInstance);
 				} else {
-					String message = "Error while saving dispersion instance ";
+					String message = "Error while saving dispersion instance (inactive token) ";
 					log.error(message);
 					throw new RuntimeException(message);
 				}
@@ -80,14 +83,14 @@ public class DispersionInstanceService implements IDispersionInstanceService {
 					dispersionInstanceRepository.save(dispersionInstance);
 					iUserRoleService.createDispersionInstanceRoles(dispersionInstance);
 				} catch(Exception e) {
-					String message = "Error while saving dispersion instance ";
+					String message = "Error while saving dispersion instance (adding without token)  ";
 					log.error(message, e);
 				}
 
 			}
 
 		} catch (Exception e) {
-			String message = "Error while saving dispersion instance ";
+			String message = "Error while saving dispersion instance (global message) ";
 			log.error(message, e);
 			throw new RuntimeException(message);
 		}

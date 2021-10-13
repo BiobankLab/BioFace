@@ -152,24 +152,24 @@ public class SampleService implements ISampleService {
 					final String filename = file.getOriginalFilename();
 					requestEntity.add("name", filename);
 					requestEntity.add("filename", filename);
-					
+
 					ByteArrayResource contentsAsResource = new ByteArrayResource(file.getBytes()){
 			            @Override
 			            public String getFilename(){
 			                return filename;
 			            }
 			        };
-					
+
 			        requestEntity.add("file", contentsAsResource);
-			        
+
 			        HttpEntity<MultiValueMap<String, Object>> entity = new HttpEntity<MultiValueMap<String, Object>>(requestEntity, headers);
-			        
+
 					RestTemplate restTemplate = new RestTemplate();
-					
+
 					restTemplate.postForObject(
 							environment.getProperty("dispersionInstance.url") + "dispersionSample/addSamples",
 							entity, String.class);
-					
+
 				} catch (Exception e) {
 					log.error("Error while uploading samples to dispersion instance", e);
 				}
@@ -335,7 +335,7 @@ public class SampleService implements ISampleService {
 			throw new RuntimeException("Error occured while getting private key");
 		}
 	}
-	
+
 	@Override
 	public String createToken() {
 		try {
@@ -370,6 +370,7 @@ public class SampleService implements ISampleService {
 				newResult.setName(dispersionInstance.getName());
 				HttpEntity<BasicPaginationQueryRequest> queryEntity = new HttpEntity<BasicPaginationQueryRequest>(
 						queryRequest, headers);
+				log.debug("Query for dispersion: " + queryEntity);
 				ResponseEntity<String> responseEntity = restTemplate.exchange(dispersionInstance.getBaseUrl() + "dispersionSample/searchSample",
 						HttpMethod.POST, queryEntity, String.class);
 				newResult.setResult(responseEntity.getBody());
@@ -385,7 +386,7 @@ public class SampleService implements ISampleService {
 		}
 		return instanceResults;
 	}
-	
+
 	@Override
 	public Long countDispersionSamplesForQuery(
 			BasicPaginationQueryRequest queryRequest) {
