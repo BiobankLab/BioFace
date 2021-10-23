@@ -10,6 +10,7 @@ import com.bee2code.bioimporter.repository.mongo.MongoRepository;
 import com.bee2code.bioimporter.repository.solr.SolrRepository;
 import com.mongodb.MongoClient;
 
+import com.mongodb.ServerAddress;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -24,7 +25,7 @@ public class DataLoader implements IDataLoader {
 
 	@Override
 	public void load(List<Donor> donorsList) throws ImporterServiceException {
-		MongoClient mongoClient = createMongoClient();
+		MongoClient mongoClient = createMongoClient(configuration);
 		MongoRepository mongoRepository = new MongoRepository(mongoClient, configuration);
 		indexRepository = new SolrRepository(configuration, mongoRepository);
 		try {
@@ -39,8 +40,8 @@ public class DataLoader implements IDataLoader {
 
 	}
 
-	public MongoClient createMongoClient() {
-		return new MongoClient();
+	public MongoClient createMongoClient(Configuration configuration) {
+		return new MongoClient(configuration.getMongo().getAddress(), configuration.getMongo().getPort());
 
 	}
 

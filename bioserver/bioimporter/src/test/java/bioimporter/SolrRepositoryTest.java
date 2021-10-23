@@ -19,7 +19,8 @@ public class SolrRepositoryTest {
 		solr.setUrl("http://localhost:8983/solr/bstest");
 		configuration.setSolr(solr);
 		Mongo mongo = new Mongo();
-		mongo.setUrl("localhost:27017");
+		mongo.setAddress("localhost");
+		mongo.setPort(27017);
 		configuration.setMongo(mongo);
 
 		JsonFile jsonFile = new JsonFile();

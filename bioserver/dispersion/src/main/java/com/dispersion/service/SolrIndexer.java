@@ -69,14 +69,14 @@ public class SolrIndexer implements ISolrIndexer {
 
 	/**
 	 * Method return configuration for all files with custom description
-	 * 
+	 *
 	 * @return
 	 */
 	public Configuration getImporterConfiguration(String filesPathToImport, String biobank) {
 		Configuration configuration = new Configuration();
 		Mongo mongoConf = new Mongo();
-		mongoConf.setUrl(environment.getProperty("spring.data.mongodb.host") + ":"
-				+ environment.getProperty("spring.data.mongodb.port"));
+		mongoConf.setAddress(environment.getProperty("spring.data.mongodb.host"));
+		mongoConf.setPort(Integer.valueOf(environment.getProperty("spring.data.mongodb.port")));
 		mongoConf.setDatabaseName(environment.getProperty("spring.data.mongodb.database"));
 		Solr solrConf = new Solr();
 		solrConf.setUrl(environment.getProperty("solr.url"));

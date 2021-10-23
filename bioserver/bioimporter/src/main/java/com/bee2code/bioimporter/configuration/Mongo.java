@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class Mongo {
-	private String url;
+	private String address;
+	private Integer port;
 	private String databaseName;
 }

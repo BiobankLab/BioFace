@@ -58,7 +58,8 @@ public class ImporterTests {
 		configuration.setSolr(solr);
 
 		Mongo mongoConf = new Mongo();
-		mongoConf.setUrl("http://localhost:27017");
+		mongoConf.setAddress("localhost");
+		mongoConf.setPort(27017);
 		configuration.setMongo(mongoConf);
 
 		importerService.runWithCustomConfiguration(configuration);
