@@ -5,7 +5,7 @@ group = 'com.dispersion'
 version = '0.0.1-SNAPSHOT'
 
 description = """dispersion"""
-
+ext['log4j2.version'] = '2.16.0'
 buildscript {
 	ext {
 		springBootVersion = '2.0.3.RELEASE'
@@ -16,7 +16,7 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
-	
+
 }
 
 configurations {
@@ -55,14 +55,21 @@ dependencies {
 	compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
 	compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.0'
 	compile group: 'org.springframework.security', name: 'spring-security-crypto', version: '5.1.5.RELEASE'
-	
+
 	compile group: 'org.liquibase', name: 'liquibase-core', version: '3.6.2'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version:"${springBootVersion}"
-	compile fileTree(dir: 'libs', include: '*.jar')  
-    
+	compile fileTree(dir: 'libs', include: '*.jar')
+
     testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}") {
 		exclude(module: 'commons-logging')
     }
     integrationTestCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}")
 }
 
+configurations.all {
+	resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+		if (details.requested.group == 'org.apache.logging.log4j') {
+			details.useVersion '2.16.0'
+		}
+	}
+}

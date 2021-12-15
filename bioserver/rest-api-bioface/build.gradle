@@ -5,7 +5,7 @@ group = 'com.bioface'
 version = '0.0.1-SNAPSHOT'
 
 description = """rest-api-bioface"""
-
+ext['log4j2.version'] = '2.16.0'
 buildscript {
 	ext {
 		springBootVersion = '2.0.3.RELEASE'
@@ -16,7 +16,7 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
-	
+
 }
 
 sourceSets {
@@ -27,7 +27,7 @@ sourceSets {
             srcDir file('src/test-integration/java')
         }
         resources.srcDir file('src/test-integration/resources')
-    }   
+    }
 }
 
 configurations {
@@ -79,21 +79,30 @@ dependencies {
     compile group: 'org.keycloak', name: 'keycloak-test-helper', version: '4.0.0.Final'
     compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.4'
 	compile group: 'org.apache.shiro', name: 'shiro-spring-boot-starter', version: '1.4.0'
-	compile group: 'org.liquibase', name: 'liquibase-core', version: '3.6.2'	
+	compile group: 'org.liquibase', name: 'liquibase-core', version: '3.6.2'
 	compile group: 'com.h2database', name: 'h2', version: '1.3.148'
 	compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
 	compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.0'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version:"${springBootVersion}"
 	compile group: 'org.keycloak', name: 'keycloak-admin-client', version: '4.0.0.Final'
 	compile fileTree(dir: 'libs', include: '*.jar')
-    
+
     //PL: check
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.6'
-    
-    
+
+
     testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}") {
 		exclude(module: 'commons-logging')
     }
     integrationTestCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:"${springBootVersion}")
 }
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'org.apache.logging.log4j') {
+            details.useVersion '2.16.0'
+        }
+    }
+}
+
 
